@@ -1,8 +1,23 @@
+import "./Home.scss";
+
+import Banner from "../components/Banner";
+import Card from "../components/Card";
+import logements from "../../logements.json";
+
 function Home() {
   return (
     <main>
-      <h1>Chez Kasa</h1>
-      <p>Bienvenue sur Kasa.</p>
+      <Banner />
+
+      <section className="logements">
+        {logements.map((logement) => (
+          <Card
+            key={logement.id}
+            title={logement.title}
+            cover={logement.cover}
+          />
+        ))}
+      </section>
     </main>
   );
 }
