@@ -1,9 +1,13 @@
 import Collapse from "../components/Collapse";
+import aboutBanner from "../assets/about-banner.png";
+import "./About.scss";
 
 function About() {
   return (
     <main>
-      <h1>À propos de Kasa</h1>
+      <div className="about-banner">
+       <img src={aboutBanner} alt="Paysage montagneux" />
+     </div>
 
       <section className="about">
         <Collapse title="Fiabilité">

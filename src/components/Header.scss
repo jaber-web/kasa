@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  padding: 0 60px;
+
+  &__logo-link {
+    text-decoration: none;
+  }
+
+  &__logo {
+    width: 140px;
+    height: auto;
+    display: block;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    a {
+      color: #000;
+      text-decoration: none;
+      font-size: 18px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &.active {
+        text-decoration: underline;
+      }
+    }
+  }
+}
