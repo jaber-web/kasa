@@ -183,14 +183,16 @@
   }
 }
 
-.app {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
 .header,
 main {
   padding-left: 70px;
   padding-right: 70px;
+}
+
+@media (max-width: 768px) {
+  .header,
+  main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }

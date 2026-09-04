@@ -21,3 +21,21 @@
     margin-bottom: 30px;
   }
 }
+
+@media (max-width: 768px) {
+  .about {
+    width: 100%;
+    margin: 0;
+  }
+
+  .about-banner {
+    width: 100%;
+    height: 139px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+  }
+
+  .about .collapse {
+    margin-bottom: 20px;
+  }
+}

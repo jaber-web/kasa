@@ -36,3 +36,22 @@
     }
   }
 }
+@media (max-width: 768px) {
+  .header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 12px;
+
+    &__logo {
+      width: 100px;
+    }
+
+    &__nav {
+      gap: 20px;
+
+      a {
+        font-size: 10px;
+      }
+    }
+  }
+}

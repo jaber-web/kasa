@@ -6,6 +6,7 @@
   background-color: #000;
   color: white;
   height: 150px;
+
   margin-top: 40px;
 
   display: flex;
@@ -15,4 +16,23 @@
 
   gap: 20px;
   padding-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    margin-top: 20px;
+    min-height: 210px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+
+    img {
+      width: 120px;
+    }
+
+    p {
+      font-size: 14px;
+      white-space: nowrap;
+      margin: 0;
+    }
+  }
 }

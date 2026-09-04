@@ -29,3 +29,17 @@ h2 {
   text-decoration: none;
   color: inherit;
 }
+
+@media (max-width: 768px) {
+  .card {
+    height: 255px;
+    border-radius: 10px;
+
+    h2 {
+      font-size: 18px;
+      padding: 50px 15px 15px;
+      line-height: 1.2;
+      text-align: left;
+    }
+  }
+}
