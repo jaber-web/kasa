@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import logements from "../../logements.json";
 import Slideshow from "../components/Slideshow";
 import Collapse from "../components/Collapse";
@@ -10,8 +10,8 @@ function Logement() {
   const logement = logements.find((item) => item.id === id);
 
   if (!logement) {
-    return <h1>Logement introuvable</h1>;
-  }
+      return <Navigate to="/error" replace />;
+    }
 
   return (
     <main>
