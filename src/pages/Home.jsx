@@ -12,10 +12,11 @@ function Home() {
       <section className="logements">
         {logements.map((logement) => (
           <Card
-            key={logement.id}
-            title={logement.title}
-            cover={logement.cover}
-          />
+           key={logement.id}
+           id={logement.id}
+           title={logement.title}
+           cover={logement.cover}
+         />
         ))}
       </section>
     </main>
