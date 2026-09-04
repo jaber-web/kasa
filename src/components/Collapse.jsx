@@ -11,7 +11,7 @@ function Collapse({ title, children }) {
         onClick={() => setIsOpen(!isOpen)}
       >
         <span>{title}</span>
-        <span className="collapse__arrow">⌄</span>
+        <span className="collapse__arrow"></span>
       </button>
 
       <div className="collapse__content">
